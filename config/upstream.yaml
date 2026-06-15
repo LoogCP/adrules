@@ -1,0 +1,13 @@
+sources:
+    - https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+    - https://adaway.org/hosts.txt
+    - https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt
+    - https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt
+    - https://v.firebog.net/hosts/Easylist.txt
+    - https://v.firebog.net/hosts/Easyprivacy.txt
+    - https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
+    - https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
+    - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.plus.txt
+    - https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt
+    - https://big.oisd.nl/
+
