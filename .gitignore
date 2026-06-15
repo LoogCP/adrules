@@ -13,3 +13,4 @@ output/*.tmp
 output/*.cache
 
 data/*.lock
+data/*.db
