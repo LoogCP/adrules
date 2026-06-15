@@ -81,13 +81,20 @@ async def run():
 
     write_files(blacklist, whitelist)
 
+    total = len(blacklist) + len(whitelist)
+
+    dedup_rate = (
+        1 - total / max(before_merge_count, 1)
+    )
+
     status = {
         "run_at": utc_now(),
         "sources": sources_status,
         "before_merge": before_merge_count,
         "blacklist": len(blacklist),
         "whitelist": len(whitelist),
-        "total": len(blacklist) + len(whitelist),
+        "total": total,
+        "dedup_rate": round(dedup_rate, 4),
     }
 
     write_status(
@@ -105,9 +112,7 @@ async def run():
         before_merge=before_merge_count,
         blacklist=len(blacklist),
         whitelist=len(whitelist),
-        dedup_rate=(
-            1 - (len(blacklist) + len(whitelist)) / max(before_merge_count, 1)
-        ),
+        dedup_rate=status["dedup_rate"],
     )
 
     commit_and_push()

@@ -7,9 +7,6 @@
 > 自动生成状态（每次 GitHub Actions 更新）
 
 <!-- START_DASHBOARD -->
-
-```md
-(自动更新内容来自 output/status.md)
 <!-- END_DASHBOARD -->
 
 ## Features
