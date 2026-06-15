@@ -3,25 +3,19 @@ import aiosqlite
 from scripts.constants import DATABASE_FILE
 
 
-async def connect_db():
+async def get_db():
 
     DATABASE_FILE.parent.mkdir(
         parents=True,
         exist_ok=True,
     )
 
-    db = await aiosqlite.connect(
-        DATABASE_FILE
-    )
-
-    db.row_factory = aiosqlite.Row
-
-    return db
+    return await aiosqlite.connect(DATABASE_FILE)
 
 
 async def init_db():
 
-    async with await connect_db() as db:
+    async with get_db() as db:
 
         await db.execute(
             """
@@ -81,7 +75,7 @@ async def upsert_source(
     entry_count,
 ):
 
-    async with await connect_db() as db:
+    async with get_db() as db:
 
         await db.execute(
             """
@@ -102,23 +96,24 @@ async def upsert_source(
                 last_fetch_at=excluded.last_fetch_at,
                 status=excluded.status,
                 entry_count=excluded.entry_count
-            """
-        , (
-            url,
-            hash_value,
-            etag,
-            last_modified,
-            last_fetch_at,
-            status,
-            entry_count,
-        ))
+            """,
+            (
+                url,
+                hash_value,
+                etag,
+                last_modified,
+                last_fetch_at,
+                status,
+                entry_count,
+            ),
+        )
 
         await db.commit()
 
 
 async def get_source(url):
 
-    async with await connect_db() as db:
+    async with get_db() as db:
 
         cursor = await db.execute(
             "SELECT * FROM source WHERE url=?",
@@ -134,7 +129,7 @@ async def insert_rules(
     whitelist,
 ):
 
-    async with await connect_db() as db:
+    async with get_db() as db:
 
         rows = []
 
@@ -158,7 +153,7 @@ async def insert_rules(
 
 async def load_all_rules():
 
-    async with await connect_db() as db:
+    async with get_db() as db:
 
         cursor = await db.execute(
             """
@@ -180,7 +175,7 @@ async def add_run_stats(
     dedup_rate,
 ):
 
-    async with await connect_db() as db:
+    async with get_db() as db:
 
         await db.execute(
             """
@@ -193,14 +188,15 @@ async def add_run_stats(
                 dedup_rate
             )
             VALUES (?, ?, ?, ?, ?, ?)
-            """
-        , (
-            run_time,
-            sources,
-            before_merge,
-            blacklist,
-            whitelist,
-            dedup_rate,
-        ))
+            """,
+            (
+                run_time,
+                sources,
+                before_merge,
+                blacklist,
+                whitelist,
+                dedup_rate,
+            ),
+        )
 
         await db.commit()
