@@ -1,6 +1,6 @@
 # 🧠 DNS Rules Dashboard
 
-⏰ Last Update: 2026-06-16T01:40:00.372175+08:00
+⏰ Last Update: 2026-06-16T01:56:28.727526+08:00
 
 ## 📊 Overview
 - Sources: 11
