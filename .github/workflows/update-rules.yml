@@ -1,0 +1,33 @@
+name: Update Rule Sets
+
+on:
+  schedule:
+    - cron: '0 2 * * *'          # 每天 UTC 2:00 运行
+  workflow_dispatch:              # 允许手动触发
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write            # 允许推送更改
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Run merge script
+        run: python merge_rules.py
+
+      - name: Commit updated rules
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "自动更新规则集"
+          file_pattern: "blacklist.txt whitelist.txt"
