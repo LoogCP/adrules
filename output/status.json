@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-15T17:09:09.707433+00:00",
+  "run_at": "2026-06-16T01:40:00.372234+08:00",
   "sources": [
     {
       "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
@@ -60,5 +60,6 @@
   "before_merge": 926639,
   "blacklist": 596309,
   "whitelist": 280,
-  "total": 596589
+  "total": 596589,
+  "dedup_rate": 0.3562
 }
