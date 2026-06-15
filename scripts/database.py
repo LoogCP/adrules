@@ -3,19 +3,17 @@ import aiosqlite
 from scripts.constants import DATABASE_FILE
 
 
-async def get_db():
-
+def _db_path():
     DATABASE_FILE.parent.mkdir(
         parents=True,
         exist_ok=True,
     )
-
-    return await aiosqlite.connect(DATABASE_FILE)
+    return DATABASE_FILE
 
 
 async def init_db():
 
-    async with get_db() as db:
+    async with aiosqlite.connect(_db_path()) as db:
 
         await db.execute(
             """
@@ -39,11 +37,7 @@ async def init_db():
                 domain TEXT,
                 action TEXT,
                 updated_at TEXT,
-                PRIMARY KEY (
-                    source_id,
-                    domain,
-                    action
-                )
+                PRIMARY KEY (source_id, domain, action)
             )
             """
         )
@@ -75,7 +69,7 @@ async def upsert_source(
     entry_count,
 ):
 
-    async with get_db() as db:
+    async with aiosqlite.connect(_db_path()) as db:
 
         await db.execute(
             """
@@ -113,7 +107,7 @@ async def upsert_source(
 
 async def get_source(url):
 
-    async with get_db() as db:
+    async with aiosqlite.connect(_db_path()) as db:
 
         cursor = await db.execute(
             "SELECT * FROM source WHERE url=?",
@@ -123,13 +117,9 @@ async def get_source(url):
         return await cursor.fetchone()
 
 
-async def insert_rules(
-    source_id,
-    blacklist,
-    whitelist,
-):
+async def insert_rules(source_id, blacklist, whitelist):
 
-    async with get_db() as db:
+    async with aiosqlite.connect(_db_path()) as db:
 
         rows = []
 
@@ -153,7 +143,7 @@ async def insert_rules(
 
 async def load_all_rules():
 
-    async with get_db() as db:
+    async with aiosqlite.connect(_db_path()) as db:
 
         cursor = await db.execute(
             """
@@ -175,7 +165,7 @@ async def add_run_stats(
     dedup_rate,
 ):
 
-    async with get_db() as db:
+    async with aiosqlite.connect(_db_path()) as db:
 
         await db.execute(
             """
