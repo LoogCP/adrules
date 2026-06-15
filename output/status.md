@@ -1,8 +1,8 @@
 # DNS Rules Status
 
-Run time: 2026-06-15T16:58:25.962949+00:00
+Run time: 2026-06-15T17:09:09.707371+00:00
 
 ## Summary
-- Blacklist: 596283
+- Blacklist: 596309
 - Whitelist: 280
-- Total: 596563
+- Total: 596589

@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-06-15T16:58:25.963001+00:00",
+  "run_at": "2026-06-15T17:09:09.707433+00:00",
   "sources": [
     {
       "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
@@ -54,11 +54,11 @@
     {
       "url": "https://big.oisd.nl/",
       "status": 200,
-      "entry_count": 327524
+      "entry_count": 327550
     }
   ],
-  "before_merge": 926613,
-  "blacklist": 596283,
+  "before_merge": 926639,
+  "blacklist": 596309,
   "whitelist": 280,
-  "total": 596563
+  "total": 596589
 }
