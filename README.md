@@ -2,6 +2,16 @@
 
 自动聚合多个广告规则源，生成 Blocky / Technitium 兼容规则。
 
+## 📊 Live Dashboard
+
+> 自动生成状态（每次 GitHub Actions 更新）
+
+<!-- START_DASHBOARD -->
+
+```md
+(自动更新内容来自 output/status.md)
+<!-- END_DASHBOARD -->
+
 ## Features
 
 - 多规则格式支持（hosts / adblock / adguard / wildcard）

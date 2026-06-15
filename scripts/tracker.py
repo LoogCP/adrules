@@ -3,12 +3,7 @@ from scripts.constants import OUTPUT_DIR
 from scripts.utils import utc_now
 
 
-def write_status(
-    sources_status,
-    before_merge,
-    blacklist,
-    whitelist,
-):
+def write_status(sources_status, before_merge, blacklist, whitelist):
 
     OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
 
@@ -19,28 +14,42 @@ def write_status(
         "blacklist": len(blacklist),
         "whitelist": len(whitelist),
         "total": len(blacklist) + len(whitelist),
+        "dedup_rate": round(
+            1 - (len(blacklist) + len(whitelist)) / max(before_merge, 1),
+            4,
+        ),
     }
 
-    status_file = OUTPUT_DIR / "status.json"
+    with open(OUTPUT_DIR / "status.json", "w", encoding="utf-8") as f:
+        json.dump(status, f, indent=2, ensure_ascii=False)
 
-    with open(status_file, "w", encoding="utf-8") as f:
-        json.dump(status, f, indent=2)
+    return status
 
 
-def write_markdown(status_json):
+def write_markdown(status):
 
-    md_file = OUTPUT_DIR / "status.md"
+    md = OUTPUT_DIR / "status.md"
 
     lines = []
 
-    lines.append("# DNS Rules Status")
+    lines.append("# 🧠 DNS Rules Dashboard")
     lines.append("")
-    lines.append(f"Run time: {status_json['run_at']}")
+    lines.append(f"⏰ Last Update: {status['run_at']}")
     lines.append("")
-    lines.append("## Summary")
-    lines.append(f"- Blacklist: {status_json['blacklist']}")
-    lines.append(f"- Whitelist: {status_json['whitelist']}")
-    lines.append(f"- Total: {status_json['total']}")
+    lines.append("## 📊 Overview")
+    lines.append(f"- Sources: {len(status['sources'])}")
+    lines.append(f"- Before Merge: {status['before_merge']}")
+    lines.append(f"- Blacklist: {status['blacklist']}")
+    lines.append(f"- Whitelist: {status['whitelist']}")
+    lines.append(f"- Total: {status['total']}")
+    lines.append(f"- Dedup Rate: {status['dedup_rate']}")
+    lines.append("")
+    lines.append("## 🌐 Sources Status")
 
-    with open(md_file, "w", encoding="utf-8") as f:
+    for s in status["sources"]:
+        lines.append(
+            f"- {s['url']} → {s.get('status')} ({s.get('entry_count', 0)})"
+        )
+
+    with open(md, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
