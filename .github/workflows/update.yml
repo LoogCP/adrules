@@ -23,3 +23,11 @@ jobs:
 
       - name: Run script
         run: python -m scripts.main
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add output/ data/
+          git commit -m "update rules" || echo "no changes"
+          git push
