@@ -1,6 +1,7 @@
 sources:
     - https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
     - https://adaway.org/hosts.txt
+    - https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-hosts.txt
     - https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt
     - https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt
     - https://v.firebog.net/hosts/Easylist.txt

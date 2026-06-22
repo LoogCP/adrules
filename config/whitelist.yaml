@@ -1,0 +1,6 @@
+domains:
+  - gitee.com
+  - bing.com
+
+sources:
+  - https://github.com/linyunle/Ad-whitelist/blob/main/whitelist.txt
