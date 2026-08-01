@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-08-01T01:15:24.662097+08:00",
+  "run_at": "2026-08-02T00:43:48.165675+08:00",
   "sources": [
     {
       "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
@@ -19,7 +19,7 @@
     {
       "url": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt",
       "status": 200,
-      "entry_count": 64332
+      "entry_count": 64534
     },
     {
       "url": "https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt",
@@ -49,22 +49,22 @@
     {
       "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.plus.txt",
       "status": 200,
-      "entry_count": 239007
+      "entry_count": 239275
     },
     {
       "url": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt",
       "status": 200,
-      "entry_count": 109311
+      "entry_count": 109758
     },
     {
       "url": "https://big.oisd.nl/",
       "status": 200,
-      "entry_count": 337511
+      "entry_count": 330783
     }
   ],
-  "before_merge": 959825,
-  "blacklist": 607281,
+  "before_merge": 954014,
+  "blacklist": 605422,
   "whitelist": 279,
-  "total": 607560,
-  "dedup_rate": 0.367
+  "total": 605701,
+  "dedup_rate": 0.3651
 }
