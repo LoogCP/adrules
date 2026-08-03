@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-08-03T00:42:47.177536+08:00",
+  "run_at": "2026-08-04T01:38:38.787053+08:00",
   "sources": [
     {
       "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
@@ -19,22 +19,22 @@
     {
       "url": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt",
       "status": 200,
-      "entry_count": 63720
+      "entry_count": 63122
     },
     {
       "url": "https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt",
       "status": 200,
-      "entry_count": 9006
+      "entry_count": 9072
     },
     {
       "url": "https://v.firebog.net/hosts/Easylist.txt",
       "status": 200,
-      "entry_count": 51033
+      "entry_count": 51776
     },
     {
       "url": "https://v.firebog.net/hosts/Easyprivacy.txt",
       "status": 200,
-      "entry_count": 42693
+      "entry_count": 42697
     },
     {
       "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt",
@@ -49,7 +49,7 @@
     {
       "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.plus.txt",
       "status": 200,
-      "entry_count": 239805
+      "entry_count": 240807
     },
     {
       "url": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt",
@@ -59,12 +59,12 @@
     {
       "url": "https://big.oisd.nl/",
       "status": 200,
-      "entry_count": 429982
+      "entry_count": 430320
     }
   ],
-  "before_merge": 1055577,
-  "blacklist": 702011,
+  "before_merge": 1057132,
+  "blacklist": 703140,
   "whitelist": 279,
-  "total": 702290,
-  "dedup_rate": 0.3347
+  "total": 703419,
+  "dedup_rate": 0.3346
 }
