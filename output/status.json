@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-09-18T03:21:06.405790+08:00",
+  "run_at": "2026-09-18T10:54:39.230240+08:00",
   "sources": [
     {
       "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
@@ -19,7 +19,7 @@
     {
       "url": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt",
       "status": 200,
-      "entry_count": 45835
+      "entry_count": 45801
     },
     {
       "url": "https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt",
@@ -59,12 +59,12 @@
     {
       "url": "https://big.oisd.nl/",
       "status": 200,
-      "entry_count": 246832
+      "entry_count": 247065
     }
   ],
-  "before_merge": 842373,
-  "blacklist": 522323,
+  "before_merge": 842572,
+  "blacklist": 523110,
   "whitelist": 279,
-  "total": 522602,
-  "dedup_rate": 0.3796
+  "total": 523389,
+  "dedup_rate": 0.3788
 }
