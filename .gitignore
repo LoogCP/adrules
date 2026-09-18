@@ -1,16 +1,27 @@
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
+# =========================
+# Runtime data
+# =========================
 
-.vscode/
-.idea/
+data/*.db
+
+# =========================
+# GitHub Actions generated files
+# =========================
+
+output/
+
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# =========================
+# Local environment
+# =========================
 
 .env
-.DS_Store
-
-output/*.tmp
-output/*.cache
-
-data/*.lock
-data/*.db
+.venv/
+venv/
