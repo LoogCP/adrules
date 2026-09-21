@@ -1,10 +1,10 @@
 {
-  "run_at": "2026-09-21T02:20:41.060975+08:00",
+  "run_at": "2026-09-22T04:09:09.015648+08:00",
   "sources": [
     {
       "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
       "status": 200,
-      "entry_count": 80172
+      "entry_count": 76232
     },
     {
       "url": "https://adaway.org/hosts.txt",
@@ -14,27 +14,27 @@
     {
       "url": "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-hosts.txt",
       "status": 200,
-      "entry_count": 957
+      "entry_count": 959
     },
     {
       "url": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt",
       "status": 200,
-      "entry_count": 42453
+      "entry_count": 42423
     },
     {
       "url": "https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt",
       "status": 200,
-      "entry_count": 9200
+      "entry_count": 8839
     },
     {
       "url": "https://v.firebog.net/hosts/Easylist.txt",
       "status": 200,
-      "entry_count": 48061
+      "entry_count": 49054
     },
     {
       "url": "https://v.firebog.net/hosts/Easyprivacy.txt",
       "status": 200,
-      "entry_count": 43057
+      "entry_count": 43080
     },
     {
       "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt",
@@ -49,7 +49,7 @@
     {
       "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.plus.txt",
       "status": 200,
-      "entry_count": 252873
+      "entry_count": 254846
     },
     {
       "url": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt",
@@ -59,12 +59,12 @@
     {
       "url": "https://big.oisd.nl/",
       "status": 200,
-      "entry_count": 246531
+      "entry_count": 246560
     }
   ],
-  "before_merge": 840929,
-  "blacklist": 524323,
-  "whitelist": 279,
-  "total": 524602,
-  "dedup_rate": 0.3762
+  "before_merge": 839618,
+  "blacklist": 521251,
+  "whitelist": 278,
+  "total": 521529,
+  "dedup_rate": 0.3788
 }
