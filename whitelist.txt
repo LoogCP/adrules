@@ -48,7 +48,6 @@
 95599.cn
 99wbwc.com
 99ybcc.com
-9zvip.net
 a.alimama.cn
 a1.itc.cn
 abchina.com
@@ -150,7 +149,6 @@ c.mipcdn.com
 camerabay.tv
 captcha.qq.com
 captcha.su.baidu.com
-carexpert.com.tw
 cbjs.baidu.com
 ccb.com
 ccllaa.com
@@ -478,7 +476,6 @@ newsmth.net
 newver.api.dedecms.com
 niotv.com
 noahedu.com
-nobugin.com
 nodkey.xyz
 notafree.host
 nowscore.com
@@ -536,7 +533,6 @@ quanzhi.cn
 raenonx.cc
 readmoo.com
 redguide.top
-redian.news
 regapi.37.com
 renfei.net
 right.com.cn
