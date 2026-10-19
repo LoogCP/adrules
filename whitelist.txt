@@ -4,7 +4,6 @@
 113.com.tw
 12306.cn
 126.net
-159i.com
 163.com
 16668tu.com
 189.cn
@@ -13,6 +12,7 @@
 1keydata.com
 2018x.bid
 2345.com
+287mm.com
 31vcd.com
 360buyimg.com
 3d66.com
@@ -29,7 +29,6 @@
 51img1.com
 520call.me
 520cc.cc
-5278.cool
 52zy.com
 58.com
 58b.tv
@@ -39,14 +38,12 @@
 5w8.fun
 7m.cn
 85po.com
-85tube.com
 8891.com.tw
 88box.com
 930mh.com
 95306.cn
 95504.net
 95599.cn
-99wbwc.com
 99ybcc.com
 a.alimama.cn
 a1.itc.cn
@@ -79,13 +76,11 @@ ads.lingxing.com
 ads.privacy.qq.com
 ads.tiktok.com
 adsense.woso.cn
-adserver.juicyads.com
 adservice.google.com
 advert.kf5.com
 adx.yiche.com
 affyun.com
 ahhhhfs.com
-airav.cc
 airchina.com.cn
 aixifan.com
 ak77now.pixnet.net
@@ -120,7 +115,6 @@ autoimg.cn
 av30.xyz
 avgle.com
 bagehd.com
-baidu-taobao-av.com
 baidu.com
 baixing.net
 banma.com
@@ -175,7 +169,6 @@ chtoen.com
 chuangkit.com
 citysbs.com
 citytalk.tw
-cloudflare.com
 cloudflare.net
 club.tgfcer.com
 cmbc.com.cn
@@ -186,13 +179,11 @@ cnbeta.com.tw
 cnki.com.cn
 cnprint.org
 cnr.cn
-cnsexy.top
 cntv.cn
 cnzz.com
 colamanga.com
 colatour.com.tw
 content.s8bbs.com
-coolinet.com
 costco.com.tw
 count.taobao.com
 count.video.sina.com.cn
@@ -398,7 +389,6 @@ kejilion.pro
 kf.cn
 kfcclub.com.tw
 kfcorder.com.tw
-kissjav.com
 kk665403.pixnet.net
 ksapisrv.com
 l.qq.com
@@ -407,7 +397,6 @@ lancdn.com
 landtop.com.tw
 laosu.cf
 laosu.tech
-laotiesao.vip
 ldxinyong.com
 lefile.cn
 lemall.com
@@ -470,7 +459,6 @@ myssl.com
 mytvsuper.com
 nceea.cn
 netded.com
-netflav.com
 news.u17i.com
 newsmth.net
 newver.api.dedecms.com
@@ -485,7 +473,6 @@ ntu.edu.tw
 ntust.edu.tw
 nvidia.cn
 oiihk.com
-olgame.tw
 omtrdc.net
 online.unionpay.com
 orientaldaily.on.cc
@@ -548,7 +535,6 @@ sdc.pingan.com
 securepubads.g.doubleclick.net
 selfimg.com.cn
 serving-sys.com
-seselah.com
 seyise8.com
 seyy66.space
 shana.pe.kr
@@ -608,7 +594,6 @@ tenpay.com
 tgfcer.com
 th-sjy.com
 th7.cn
-thisav.com
 threatbook.cn
 tianxun.com
 tkec.com.tw
@@ -682,7 +667,6 @@ yimg.com
 yimg.jp
 yimuhe.com
 yiqifa.com
-youaima.com
 youku.com
 youneed.win
 yummy.best
